@@ -1,0 +1,22 @@
+body {
+	padding-top: 25px;
+	padding-left: 100px;
+	padding-right: 100px;
+	padding-bottom: 25px;
+}
+
+.jumbotron {
+	height: 400px;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-image: url('golf.jpg');
+	background-color: #cccccc;
+}
+
+.jumbotron h1 {
+	color: #fff;
+	font-size: 54px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	padding-left: 15px;
+}
