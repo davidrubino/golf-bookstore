@@ -8,8 +8,8 @@ body {
 .jumbotron {
 	height: 400px;
 	background-repeat: no-repeat;
-	background-size: 100% 100%;
-	background-image: url('golf.jpg');
+	background-size: cover;
+	background-image: url('img.png');
 	background-color: #cccccc;
 }
 
@@ -19,4 +19,5 @@ body {
 	font-family: Arial, Helvetica, sans-serif;
 	font-weight: bold;
 	padding-left: 15px;
+	padding-top: 200px;
 }
