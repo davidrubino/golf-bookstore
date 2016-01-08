@@ -6,6 +6,7 @@
 		<title>The Golf Bookstore</title>
 		<link rel="stylesheet" href="main.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://code.jquery.com/ui/1.11.4/themes/start/jquery-ui.css">
 	</head>
 	<body>
 
@@ -15,8 +16,21 @@
 					<h1>The Golf Bookstore</h1>
 				</div>
 
-				<div>
-					<iframe src="http://astore.amazon.com/retail0cd-20" width="100%" height="550" frameborder="0" scrolling="yes"></iframe>
+				<div id="tabs">
+					<ul>
+						<li>
+							<a href="#tab1">Tab 1</a>
+						</li>
+						<li>
+							<a href="#tab2">Tab 2</a>
+						</li>
+					</ul>
+					<div id="tab1">
+						<iframe src="http://astore.amazon.com/retail0cd-20" width="100%" height="550" frameborder="0" scrolling="yes"></iframe>
+					</div>
+					<div id="tab2">
+						<iframe src="http://astore.amazon.com/classicstore-20" width="100%" height="550" frameborder="0" scrolling="yes"></iframe>
+					</div>
 				</div>
 
 			</div>
@@ -24,7 +38,14 @@
 
 		<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
 		<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+
+		<script>
+			$(function() {
+				$("#tabs").tabs();
+			});
+		</script>
 
 	</body>
 </html>
